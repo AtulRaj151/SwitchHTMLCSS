@@ -1,0 +1,51 @@
+.container{
+
+       height: 50px;
+       width: 100px;
+       border: 1px solid grey;
+       border-radius: 100px;
+       margin-left: 100px;
+       margin-top: 100px;
+       position: relative;
+       overflow: hidden;
+      
+}
+
+#button{
+
+      height: 50px;
+      width: 50px;
+      box-shadow:0px 0px 3px 4px grey;
+      background-color: white;
+      border-radius: 50%;
+      position:absolute;
+      top: 0px;
+      left: 0px;
+}
+#button:hover{
+    cursor: pointer;
+}
+.container input:checked ~label #button{
+     left: 50px;
+       
+}
+input:checked::before div {
+     background: greenyellow;
+}
+#toggle{
+
+    display: none;
+}
+#container-back{
+
+    background-color:white;
+     height:50px;
+     position: relative;
+     width: 100px;
+     border-radius: 100px;
+     border:1px solid green;
+}
+#toggle:checked ~#container-back{
+
+    background-color:yellowgreen;
+}
